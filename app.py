@@ -6,6 +6,7 @@ from src.MyMLProjects.components.model_tranier import ModelTrainer
 import sys
 
 
+
 if __name__=="__main__":
     logging.info("The execution has started")
 

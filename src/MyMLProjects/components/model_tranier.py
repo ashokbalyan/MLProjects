@@ -20,6 +20,9 @@ from xgboost import XGBRegressor
 from src.MyMLProjects.exception import CustomException
 from src.MyMLProjects.logger import logging
 from src.MyMLProjects.utils import save_object,evaluate_models
+import dagshub
+dagshub.init(repo_owner='ashokbalyan', repo_name='MLProjects', mlflow=True)
+
 
 
 @dataclass
@@ -115,8 +118,8 @@ class ModelTrainer:
                     actual_model = actual_model + model
 
             best_params = params[actual_model]
-            '''
-            mlflow.set_registry_uri("https://dagshub.com/krishnaik06/mlprojecthindi.mlflow")
+            
+            mlflow.set_registry_uri("https://dagshub.com/ashokbalyan/MLProjects.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             # mlflow
@@ -145,7 +148,7 @@ class ModelTrainer:
                 else:
                     mlflow.sklearn.log_model(best_model, "model")
 
-                '''
+                
 
 
             if best_model_score<0.6:

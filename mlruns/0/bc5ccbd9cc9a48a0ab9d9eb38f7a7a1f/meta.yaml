@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ashok.balyan/PycharmProjects/LLM/MLProjects/mlruns/0/bc5ccbd9cc9a48a0ab9d9eb38f7a7a1f/artifacts
+end_time: 1726949039262
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bc5ccbd9cc9a48a0ab9d9eb38f7a7a1f
+run_name: ambitious-loon-179
+run_uuid: bc5ccbd9cc9a48a0ab9d9eb38f7a7a1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726949026914
+status: 3
+tags: []
+user_id: ashok.balyan
